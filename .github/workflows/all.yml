@@ -1,0 +1,12 @@
+name: All
+on:
+  workflow_call: ~
+permissions:
+  contents: read
+jobs:
+  TEST:
+    name: TEST
+    runs-on: ubuntu-22.04
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v4

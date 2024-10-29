@@ -1,0 +1,10 @@
+name: Nightly
+on:
+  workflow_dispatch: ~
+permissions:
+  contents: read
+jobs:
+  NIGHTLY_MAIN:
+    uses ./.github/workflows/all.yml@main
+  NIGHTLY_8.4:
+    uses ./.github/workflows/all.yml@PHP-8.4
