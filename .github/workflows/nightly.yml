@@ -5,6 +5,6 @@ permissions:
   contents: read
 jobs:
   NIGHTLY_MAIN:
-    uses: ./.github/workflows/all.yml@main
+    uses: ./.github/workflows/all.yml
   NIGHTLY_8.4:
     uses: ./.github/workflows/all.yml@PHP-8.4
